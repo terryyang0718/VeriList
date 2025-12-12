@@ -411,7 +411,7 @@ int main(int argc, char *argv[]) {
           tmp = read_env_par(tmp1);
         }
         if (tmp.find("+incdir+") == 0) {
-          re(tmp, "+incdir+", "+incdir+, "");
+          re(tmp, "+incdir+", "+incdir+", "");
           if (tmp.rfind("/") == tmp.size() - 1) {
             string tmp1 = tmp;
             tmp = tmp1.substr(0, tmp1.rfind("/"));
